@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "DS4MapperTest/0.0.12": {
+      "DS4MapperTest/0.0.14": {
         "dependencies": {
           "HandyControl": "3.3.0",
           "NLog": "5.1.1",
@@ -79,7 +79,7 @@
     }
   },
   "libraries": {
-    "DS4MapperTest/0.0.12": {
+    "DS4MapperTest/0.0.14": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

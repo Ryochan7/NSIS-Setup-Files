@@ -2,7 +2,7 @@
 
 ; HM NIS Edit Wizard helper defines
 !define PRODUCT_NAME "SteamControllerTest"
-!define PRODUCT_VERSION "0.0.18"
+!define PRODUCT_VERSION "0.0.19"
 !define PRODUCT_PUBLISHER "Ryochan7"
 !define PRODUCT_WEB_SITE "https://github.com/Ryochan7/DS4Windows/"
 !define PRODUCT_DIR_REGKEY "Software\Microsoft\Windows\CurrentVersion\App Paths\SteamControllerTest.exe"
