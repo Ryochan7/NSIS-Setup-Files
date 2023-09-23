@@ -6,20 +6,19 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "DS4Windows/3.2.13": {
+      "DS4Windows/3.2.15": {
         "dependencies": {
           "DotNetProjects.Extended.Wpf.Toolkit": "5.0.103",
           "H.NotifyIcon.Wpf": "2.0.74",
           "MdXaml": "1.16.2",
           "NLog": "5.1.1",
           "Ookii.Dialogs.Wpf": "5.0.1",
-          "System.Management": "7.0.0",
+          "System.Management": "7.0.2",
           "TaskScheduler": "2.10.1",
           "WPFLocalizeExtension": "3.9.4",
           "WpfScreenHelper": "2.1.0",
           "bloomtom.HttpProgress": "2.3.2",
           "FakerInputWrapper": "1.0.3.0",
-          "Nefarius.Utilities.DeviceManagement": "3.5.209.0",
           "Nefarius.ViGEm.Client": "1.0.0.0",
           "SharpOSC": "0.1.1.0"
         },
@@ -41,6 +40,9 @@
           },
           "de/DS4Windows.resources.dll": {
             "locale": "de"
+          },
+          "el/DS4Windows.resources.dll": {
+            "locale": "el"
           },
           "es/DS4Windows.resources.dll": {
             "locale": "es"
@@ -199,22 +201,22 @@
           "Microsoft.Win32.SystemEvents": "6.0.0"
         }
       },
-      "System.Management/7.0.0": {
+      "System.Management/7.0.2": {
         "dependencies": {
           "System.CodeDom": "7.0.0"
         },
         "runtime": {
           "lib/net6.0/System.Management.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "7.0.22.51805"
+            "assemblyVersion": "7.0.0.2",
+            "fileVersion": "7.0.723.27404"
           }
         },
         "runtimeTargets": {
           "runtimes/win/lib/net6.0/System.Management.dll": {
             "rid": "win",
             "assetType": "runtime",
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "7.0.22.51805"
+            "assemblyVersion": "7.0.0.2",
+            "fileVersion": "7.0.723.27404"
           }
         }
       },
@@ -267,7 +269,7 @@
       "WPFLocalizeExtension/3.9.4": {
         "dependencies": {
           "System.Drawing.Common": "6.0.0",
-          "System.Management": "7.0.0",
+          "System.Management": "7.0.2",
           "XAMLMarkupExtensions": "2.1.3"
         },
         "runtime": {
@@ -301,14 +303,6 @@
           }
         }
       },
-      "Nefarius.Utilities.DeviceManagement/3.5.209.0": {
-        "runtime": {
-          "Nefarius.Utilities.DeviceManagement.dll": {
-            "assemblyVersion": "3.5.209.0",
-            "fileVersion": "3.5.209.0"
-          }
-        }
-      },
       "Nefarius.ViGEm.Client/1.0.0.0": {
         "runtime": {
           "Nefarius.ViGEm.Client.dll": {
@@ -328,7 +322,7 @@
     }
   },
   "libraries": {
-    "DS4Windows/3.2.13": {
+    "DS4Windows/3.2.15": {
       "type": "project",
       "serviceable": false,
       "sha512": "",
@@ -439,12 +433,12 @@
       "path": "system.drawing.common/6.0.0",
       "hashPath": "system.drawing.common.6.0.0.nupkg.sha512"
     },
-    "System.Management/7.0.0": {
+    "System.Management/7.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-A4jed4QUviDOm7fJNKAJObEAEkEUXmkGL/w0iyCYTzrl1rezTj8LGFHfsVst4Vb9JwFcTpboiDrvdST48avBpw==",
-      "path": "system.management/7.0.0",
-      "hashPath": "system.management.7.0.0.nupkg.sha512"
+      "sha512": "sha512-/qEUN91mP/MUQmJnM5y5BdT7ZoPuVrtxnFlbJ8a3kBJGhe2wCzBfnPFtK2wTtEEcf3DMGR9J00GZZfg6HRI6yA==",
+      "path": "system.management/7.0.2",
+      "hashPath": "system.management.7.0.2.nupkg.sha512"
     },
     "System.Security.AccessControl/5.0.0": {
       "type": "package",
@@ -489,11 +483,6 @@
       "hashPath": "xamlmarkupextensions.2.1.3.nupkg.sha512"
     },
     "FakerInputWrapper/1.0.3.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Nefarius.Utilities.DeviceManagement/3.5.209.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

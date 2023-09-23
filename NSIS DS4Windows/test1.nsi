@@ -2,7 +2,7 @@
 
 ; HM NIS Edit Wizard helper defines
 !define PRODUCT_NAME "DS4Windows"
-;!define PRODUCT_VERSION "3.2.13"
+;!define PRODUCT_VERSION "3.2.15"
 !define PRODUCT_PUBLISHER "Ryochan7"
 !define PRODUCT_WEB_SITE "https://github.com/Ryochan7/DS4Windows/"
 !define PRODUCT_DIR_REGKEY "Software\Microsoft\Windows\CurrentVersion\App Paths\DS4Windows.exe"
@@ -63,7 +63,7 @@ InstType "Core"
 ; MUI end ------
 
 Name "${PRODUCT_NAME}"
-OutFile "DS4Windows_installer_x64_v3.2.13.exe"
+OutFile "DS4Windows_installer_x64_v3.2.15.exe"
 InstallDir "$PROGRAMFILES64\DS4Windows"
 InstallDirRegKey HKLM "${PRODUCT_DIR_REGKEY}" ""
 ShowInstDetails show
@@ -96,7 +96,6 @@ Section "DS4Windows" SEC01
   File DS4Windows\MdXaml.dll
   File DS4Windows\MdXaml.Plugins.dll
   File DS4Windows\Microsoft.Win32.TaskScheduler.dll
-  File DS4Windows\Nefarius.Utilities.DeviceManagement.dll
   File DS4Windows\Nefarius.ViGEm.Client.dll
   File DS4Windows\NLog.config
   File DS4Windows\NLog.dll
@@ -321,7 +320,6 @@ Section Uninstall UninstSectionCore
   Delete "$INSTDIR\MdXaml.dll"
   Delete "$INSTDIR\MdXaml.Plugins.dll"
   Delete "$INSTDIR\Microsoft.Win32.TaskScheduler.dll"
-  Delete "$INSTDIR\Nefarius.Utilities.DeviceManagement.dll"
   Delete "$INSTDIR\Nefarius.ViGEm.Client.dll"
   Delete "$INSTDIR\NLog.config"
   Delete "$INSTDIR\NLog.dll"
