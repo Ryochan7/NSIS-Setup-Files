@@ -40,7 +40,7 @@ bool checkNETVersion()
                     LONG nError = RegQueryValueExW(hKey, achValue, 0, NULL, reinterpret_cast<LPBYTE>(&dwRet), &dwBufferSize);
                     std::wstring strtmp(&achValue[0], &achValue[MAX_VALUE_NAME]);
                     //size_t testPos = strtmp.find(L"6.", 0);
-                    if (nError == ERROR_SUCCESS && strtmp.find(L"6.", 0) != std::string::npos)
+                    if (nError == ERROR_SUCCESS && strtmp.find(L"8.", 0) != std::string::npos)
                     {
                         result = true;
                         break;
