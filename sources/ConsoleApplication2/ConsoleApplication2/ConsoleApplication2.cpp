@@ -10,12 +10,12 @@
 bool checkNETVersion()
 {
     bool result = false;
-    DWORD dwRet;
-    LONG retCode;
+    DWORD dwRet = 0;
+    LONG retCode = 0;
     DWORD dwBufferSize(sizeof(DWORD));
     HKEY hKey;
-    DWORD nSubKeys;
-    DWORD nValues;
+    DWORD nSubKeys = 0;
+    DWORD nValues = 0;
     LONG lRes = RegOpenKeyExW(HKEY_LOCAL_MACHINE,
         L"SOFTWARE\\WOW6432Node\\dotnet\\Setup\\InstalledVersions\\x64\\sharedfx\\Microsoft.WindowsDesktop.App",
         0, KEY_READ, &hKey);
@@ -25,7 +25,7 @@ bool checkNETVersion()
         lRes = RegQueryInfoKey(hKey, NULL, NULL, NULL, NULL, NULL, NULL, &nValues, NULL, NULL, NULL, NULL);
         if (lRes == ERROR_SUCCESS)
         {
-            TCHAR achValue[MAX_VALUE_NAME];
+            TCHAR* achValue = new TCHAR[MAX_VALUE_NAME];
             DWORD cchValue = MAX_VALUE_NAME;
 
             for (int i = 0; i < nValues; i++)
@@ -47,6 +47,8 @@ bool checkNETVersion()
                     }
                 }
             }
+
+            delete[] achValue;
         }
 
         RegCloseKey(hKey);
